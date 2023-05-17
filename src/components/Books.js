@@ -4,7 +4,7 @@ import Book from './Book';
 import AddBook from './AddBook';
 
 export default function Books() {
-  const books = useSelector((state) => state.books.books);
+  const { books } = useSelector((state) => state.books);
 
   return (
     <div className="flex flex-col gap-12">
