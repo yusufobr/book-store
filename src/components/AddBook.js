@@ -11,7 +11,7 @@ export default function AddBook() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newBook = {
-      id: Math.random().toString().substr(2, 6),
+      item_id: Math.random().toString().substr(2, 6),
       title,
       author,
     };
