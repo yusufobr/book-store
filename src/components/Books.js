@@ -19,6 +19,8 @@ export default function Books() {
           />
         ))}
       </div>
+      <hr />
+      <h2 className="text-gray-400 text-xl font-bold uppercase">add new book</h2>
       <AddBook />
     </div>
   );
