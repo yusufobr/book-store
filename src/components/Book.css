@@ -15,7 +15,7 @@
 }
 
 div[role="progressbar"] {
-  --size: 100px;
+  --size: 70px;
   --fg: #0090ff;
   --bg: #def;
   --pgPercentage: var(--value);
