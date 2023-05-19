@@ -3,14 +3,18 @@
   33% {
     --pgPercentage: 0;
   }
+
   100% {
     --pgPercentage: var(--value);
   }
 }
 
 @property --pgPercentage {
+  /* stylelint-disable-next-line */
   syntax: "<number>";
+  /* stylelint-disable-next-line */
   inherits: false;
+  /* stylelint-disable-next-line */
   initial-value: 0;
 }
 
@@ -19,13 +23,15 @@ div[role="progressbar"] {
   --fg: #0090ff;
   --bg: #def;
   --pgPercentage: var(--value);
+
   animation: growProgressBar 3s 1 forwards;
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       closest-side,
       white 88%,
       transparent 0 99.9%,
@@ -33,7 +39,7 @@ div[role="progressbar"] {
     ),
     conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 0px;
+  font-size: 0;
   color: var(--fg);
 }
 
@@ -46,12 +52,15 @@ div[role="progressbar"]::before {
   display: flex;
   flex-direction: column;
 }
+
 .completed {
   color: gray;
 }
+
 .prc {
   font-size: 220%;
 }
+
 #thediv {
   display: flex;
   gap: 20px;
