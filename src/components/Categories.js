@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Categories() {
   return (
-    <div>Comming soon ...</div>
+    <div className="container mx-auto mt-8">Coming soon ...</div>
   );
 }

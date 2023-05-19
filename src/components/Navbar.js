@@ -9,7 +9,7 @@ export default function Navbar() {
           <div className="text-3xl capitalize font-bold text-[#0290ff]">
             <Link to="/">Bookstore CMS</Link>
           </div>
-          <nav className="flex gap-8">
+          <nav className="flex gap-8 text-gray-400">
             <NavLink to="/">Books</NavLink>
             <NavLink to="/categories">category</NavLink>
           </nav>

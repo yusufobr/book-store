@@ -13,3 +13,7 @@ code {
     'Courier New',
     monospace;
 }
+
+.active {
+  color: black;
+}

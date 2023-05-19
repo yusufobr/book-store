@@ -52,11 +52,10 @@ export default function Book(props) {
               {' '}
               %
             </span>
-            <span className="completed">Completed</span>
+            <span className="completed -mt-2">Completed</span>
           </div>
         </div>
       </div>
-
       <div className="flex flex-col gap-2">
         <span className="text-gray-300 uppercase">current chapter</span>
         <span className="capitalize text-2xl font-light">chapter 17</span>
