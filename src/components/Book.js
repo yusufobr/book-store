@@ -2,7 +2,7 @@ import React from 'react';
 // eslint-disable-next-line
 import PropTypes from "prop-types";
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 
 export default function Book(props) {
   const {
@@ -19,7 +19,7 @@ export default function Book(props) {
       </span>
       <span>{category}</span>
       <button
-        onClick={() => dispatch(removeBook(id))}
+        onClick={() => dispatch(deleteBook(id))}
         className="bg-gray-200 p-1"
         id={id}
         type="button"
