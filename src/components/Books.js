@@ -2,13 +2,15 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
+import LoadingBook from './LoadingBook';
 
 export default function Books() {
-  const { books } = useSelector((state) => state.books);
+  const { books, isLoading } = useSelector((state) => state.books);
 
   return (
     <div className="flex flex-col gap-12">
       <div>
+        {isLoading ? <LoadingBook /> : ''}
         {books.map((item) => (
           <Book
             key={item.item_id}

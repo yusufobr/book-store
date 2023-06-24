@@ -14,7 +14,7 @@ export default function Book(props) {
   const progressNumber = Math.floor(Math.random() * 100) + 1;
 
   return (
-    <div className="py-8 px-6 grid grid-cols-3 gap-32 my-4 border rounded-sm border-gray-300 bg-white">
+    <div className="py-8 px-6 grid grid-cols-3 gap-32 my-4 border rounded-sm border-gray-300 bg-white hover:border-gray-400">
       <div className="col-span-2 flex justify-between">
         <div className="flex flex-col gap-1 capitalize">
           <span className="text-gray-500 font-semibold">{category}</span>

@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <div className="bg-white border-b-2 border-gray-300">
-      <div className="flex justify-between items-center container mx-auto py-8">
+      <div className="flex justify-between items-center container px-4 mx-auto py-8">
         <div className="flex justify-between items-center gap-12">
           <div className="text-3xl capitalize font-bold text-[#0290ff]">
             <Link to="/">Bookstore CMS</Link>
